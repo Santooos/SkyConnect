@@ -1,47 +1,33 @@
-# BE Smart Hack Repo Template
-
-## Description 🚨 
-This is a repository template containing all the information that needs to accompany your project.
-
-Feel free to use any languages or frameworks, but the following information must be filled out before hacking ends.
-___________
-# Project Name
+# SkyConnect
 
 ## Challenge Statement(s) Addressed 🎯
-**...include the challenge statement(s) the project worked to address**
+SkyConnect is an innovative in-flight networking platform designed for professionals to connect, engage, and expand their professional network while flying. 
 
-Examples:
-* How might we decrease the United States chances of alien and monster attacks given what we know from popular alien and monster movies?
-* How might we make it possible for people in cities not to have to own a car by making car-sharing easier so that the environment will be less damaged and people can save money?
-* How might we ....
+SkyConnect addresses the challenge of unproductive downtime during flights and the missed opportunity for professional networking. In an era where every minute counts, SkyConnect transforms travel time into a networking hub, fostering connections and collaborations amongst professionals.
 
 ## Project Description 🤯
-**....at lease 3 sentences describing what the project does and how it works**
+SkyConnect leverages flight time to enable passengers to discover professional opportunities, connect with fellow travelers, and potentially create new business ventures. By integrating LinkedIn profiles, the platform matches professionals based on their industry, interests, and travel itineraries. The real-time chat feature facilitates immediate communication, making every flight a networking event.
 
 ## Project Value 💰
-**....at lease 3 sentences describing your target customer and tangible benefits from your solution**
+SkyConnect targets business professionals who value networking and productive time usage. By providing a platform for in-flight professional connections, SkyConnect delivers tangible benefits like increased business opportunities, enhanced travel experiences, and optimized networking time. It's an exclusive service that adds value to the airline's offerings, potentially increasing customer loyalty and satisfaction.
 
 
 ## Tech Overview 💻
-**... what tech was used to bring this project to life?**
-
-Example:
-* FastAPI
-* Hugging Face AI Models
-* Next.js
+- Node.js with Express for backend services
+- React for a dynamic and responsive frontend
+- LinkedIn API for professional profile integration
+- Firebase Realtime Database for instant messaging and user interactions
+- American Airlines API for real-time flight information and seating data
+- Google Maps API for airport navigation
+- OpenWeatherMap API for destination weather forecasts
 
 
 ### ✨ Contributors ✨
-**...tell the world who you and your team are 🙂**
-* Team member X (AAdvantage No)
-* Team member Y (AAdvantage No)
-* Team member Z (AAdvantage No)
 
-### School Name 🏫
-The ABC School
-
-### Team Name 🏷
-Coding Costars
+* Santosh Lamichhane (AAdvantage No: V096NP2)
+* Tanyaradzwa Chisepo (AAdvantage No: Y71AB76)
+* Bongiwe S.N. Mkwananzi (AAdvantage No: B5YN372)
+* Buchizya Mwase (AAdvantage No: P8BU474)
 
 ### Link to Video Pitch 📹
 **...point us to where you tell us about your solution 😄**
