@@ -4,10 +4,9 @@ export default function SignIn() {
     return (
         <div className="main">
       <div className="intro">
-        <h1>Welcome to SkyConnect</h1>
+        <h1>Welcome back to SkyConnect</h1>
         <p>
-          SkyConnect is a platform where you can connect with people and
-          exchange ideas. You can also find a job here.
+          
         </p>
       </div>
       <div className="login-form">
