@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 //New Sequelize instance
 const sequelize = new Sequelize({
   dialect: "sqlite",
-  storage: "./database/data.sqlite",
+  storage: "database/data.sqlite",
 });
 
 const User = sequelize.define("User", {
@@ -203,14 +203,7 @@ const Notification = sequelize.define("Notification", {
 
 });
 
-async () => {
-    try {
-      await sequelize.sync({ alter: true });
-      console.log("Database synchronized");
-    } catch (error) {
-      console.error("Error synchronizing database:", error);
-    }
-  };
+sequelize.sync({ alter: true });
   
-  module.exports = { sequelize, User, Message, Connection, TravelStatus, Notification };
+module.exports = { sequelize, User, Message, Connection, TravelStatus, Notification };
   
