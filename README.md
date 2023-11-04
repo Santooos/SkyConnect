@@ -9,7 +9,7 @@ SkyConnect addresses the challenge of unproductive downtime during flights and t
 SkyConnect leverages flight time to enable passengers to discover professional opportunities, connect with fellow travelers, and potentially create new business ventures. By integrating LinkedIn profiles, the platform matches professionals based on their industry, interests, and travel itineraries. The real-time chat feature facilitates immediate communication, making every flight a networking event.
 
 ## Project Value 💰
-SkyConnect targets business professionals who value networking and productive time usage. By providing a platform for in-flight professional connections, SkyConnect delivers tangible benefits like increased business opportunities, enhanced travel experiences, and optimized networking time. It's an exclusive service that adds value to the airline's offerings, potentially increasing customer loyalty and satisfaction.
+SkyConnect targets business professionals who value networking and productive time usage. We proposed to integrate this project as an added benefits exclusively for the Admirals Clubs members of American Airlines. By providing a platform for in-flight professional connections, SkyConnect delivers tangible benefits like increased business opportunities, enhanced travel experiences, and optimized networking time of the customer. It's an exclusive service that adds value to the American airline's offerings, potentially increasing customer loyalty and satisfaction.
 
 
 ## Tech Overview 💻
