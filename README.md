@@ -1,10 +1,3 @@
-
-
-## Description 🚨 
-This is a repository template containing all the information that needs to accompany your project.
-
-Feel free to use any languages or frameworks, but the following information must be filled out before hacking ends.
-___________
 # SkyConnect
 
 ## Challenge Statement(s) Addressed 🎯
