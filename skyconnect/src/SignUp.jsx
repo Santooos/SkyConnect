@@ -50,6 +50,7 @@ export default function SignUp() {
               <input type="email" id="email" name="email" value={email} onChange={handleEmailChange} required={!useLinkedIn} disabled={useLinkedIn} />
               <label htmlFor="password">Password:</label>
               <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} required />
+              <button type="submit">Submit</button>
             </>
           )}
           <div className="linkedin-checkbox-container">
