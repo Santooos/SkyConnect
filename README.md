@@ -17,7 +17,7 @@ life’s journey, it's an exclusive service that adds value to the American airl
 - Node.js with Express for backend services
 - React for a dynamic and responsive frontend
 - LinkedIn API for professional profile integration
-- Firebase Realtime Database for instant messaging and user interactions
+- Local Sqlite3 Database for instant messaging and user interactions
 - American Airlines API for real-time flight information and seating data
 - Google Maps API for airport navigation
 - OpenWeatherMap API for destination weather forecasts
