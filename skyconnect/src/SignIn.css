@@ -1,0 +1,121 @@
+/* Container for the entire sign-in page, to center everything vertically */
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Styles for the logo container */
+.logo-container {
+    margin-bottom: 30px; /* Space between logo and the welcome message box */
+}
+
+/* Styles for the logo image */
+.signin-logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Container for the welcome message */
+.welcome-container {
+    background-color: #f8f9fa; /* Light background for the welcome box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between welcome message and login form */
+    text-align: center;
+}
+
+/* Styles for the login header */
+.login-form h3 {
+    color: #0056b3; /* Use a brand color or something bold */
+    font-size: 1.75rem; /* Make it larger than the default */
+    font-weight: 600; /* Add some weight to the header */
+    margin-bottom: 1rem; /* Add space below the header */
+    text-transform: uppercase; /* Optional: CAPITALIZE */
+}
+
+/* Styles for labels to make them look better */
+.login-form label {
+    display: block; /* Make labels block to take up their own line */
+    color: #333; /* Dark color for readability */
+    font-size: 1rem; /* Size them appropriately */
+    font-weight: 500; /* Slightly bold labels */
+    margin-bottom: 0.5rem; /* Space below the label */
+    text-align: left; /* Align text to the left */
+}
+
+/* Enhance input fields for a modern look */
+.login-form input {
+    padding: 10px 15px;
+    margin-bottom: 1rem; /* More space between fields */
+    border: 2px solid #ddd; /* Slightly thicker border */
+    border-radius: 5px; /* Rounded borders for the inputs */
+    font-size: 1rem; /* Larger font size for readability */
+    font-weight: 400; /* Not too bold, but not too light */
+}
+
+/* Styles for form inputs and button */
+.login-form input,
+.login-btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Add some style to the login button */
+.login-btn {
+    background-color: #0056b3; /* Brand color or something vibrant */
+    color: #fff; /* White text for contrast */
+    font-size: 1rem; /* Matching font size with inputs */
+    font-weight: 600; /* Make button text slightly bolder */
+    padding: 12px 20px; /* Slightly larger padding for a bigger button */
+    border-radius: 5px; /* Consistent rounded borders */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    background-color: #003d82; /* Darker shade on hover/focus for interaction */
+    outline: none; /* Remove outline on focus for clean design */
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #fff; /* Light background for the login box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .welcome-container,
+    .login-container {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+/* ... existing styles ... */
+
+.new-user-prompt {
+    margin-top: 1rem; /* Space above the prompt */
+  }
+  
+  .signup-link {
+    color: #0066cc; /* A color that stands out, but fits your design */
+    text-decoration: none; /* No underline for a cleaner look */
+    margin-left: 5px; /* Space between text and link */
+  }
+  
+  .signup-link:hover,
+  .signup-link:focus {
+    text-decoration: underline; /* Underline on hover/focus for interactivity */
+  }
+  

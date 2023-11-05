@@ -1,0 +1,112 @@
+/* Reuse styles from SignIn.css, adjust class names as needed */
+
+/* Container for the entire sign-up page, to center everything vertically */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Styles for the welcome message */
+  .welcome-container {
+    /* ... same as in SignIn.css ... */
+    .welcome-container {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .welcome-container h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .welcome-container p {
+        font-size: 18px;
+        color: #666;
+    }
+  }
+  
+  /* Styles for the sign-up form container */
+  .signup-form-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between welcome message and signup form */
+  }
+  
+  /* Styles for form inputs and button */
+  .signup-form input,
+  .register-btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    /* ... other styles same as login-btn in SignIn.css ... */
+  }
+  
+  /* Styles for the register button */
+  .register-btn {
+    background-color: #0077ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    /* ... same as login-btn in SignIn.css ... */
+  }
+  
+  /* Styles for existing user prompt */
+  .existing-user-prompt p {
+    margin-top: 20px;
+    
+    /* ... other styles same as new-user-prompt in SignIn.css ... */
+    /* Styles for new user prompt */
+    .new-user-prompt {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .new-user-prompt a {
+        color: #0077ff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .new-user-prompt a:hover {
+        color: #004499;
+        text-decoration: underline;
+    }
+  }
+/* Styles for the login button */
+
+
+.login-btn:hover {
+    background-color: #004499;
+}
+  
+  
+  /* ... responsive adjustments ... */
+/* Styles for the login link */
+.login-link {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-link:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
