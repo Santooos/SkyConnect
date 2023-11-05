@@ -53,25 +53,26 @@ server.listen(PORT, () => {
 
 // ...other server setup code...
 
-const axios = require('axios');
+// const axios = require('axios');
 
-app.get('/get-boarding-gate-location', async (req, res) => {
-  try {
-    // Make a request to the Google Maps API or another service.
-    // For example, using the Google Maps API to get location details:
-    const response = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
-      params: {
-        place_id: 'your_place_id', // replace with actual data
-        key: process.env.GOOGLE_MAPS_API_KEY // ensure your API key is stored safely
-      }
-    });
+// app.get('/get-boarding-gate-location', async (req, res) => {
+//   try {
+//     // Make a request to the Google Maps API or another service.
+//     // For example, using the Google Maps API to get location details:
+//     const response = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
+//       params: {
+//         place_id: 'your_place_id', // replace with actual data
+//         key: process.env.GOOGLE_MAPS_API_KEY // ensure your API key is stored safely
+//       }
+//     });
 
-    // Send back the relevant data to the front-end
-    res.json(response.data.result.geometry.location);
-  } catch (error) {
-    console.error("Error fetching from Google Maps API", error);
-    res.status(500).send('Internal Server Error');
-  }
-});
+//     // Send back the relevant data to the front-end
+//     res.json(response.data.result.geometry.location);
+//   } catch (error) {
+//     console.error("Error fetching from Google Maps API", error);
+//     res.status(500).send('Internal Server Error');
+//   }
+// });
 
 // ...other server setup code...
+

@@ -1,156 +1,63 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import './Dashboard.css';
-
-import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from 'react-google-maps-api';
-
-const googleMapsApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY; // Store your API key in an environment variable
+import React, { useState } from 'react';
+import './Chatwindow.css';
+import { FaTimes } from 'react-icons/fa';
 
 export default function Dashboard() {
-    const [currentLocation, setCurrentLocation] = useState(null);
-    const [directions, setDirections] = useState(null);
-    const [isMapOpen, setIsMapOpen] = useState(false);
+    const [flightInfo, setFlightInfo] = useState({
+        flightTime: 'Loading...',
+        boardingGate: 'Loading...',
+        baggageClaimGate: 'Loading...',
+    });
+    const [chatMessages, setChatMessages] = useState([]);
+    const [messageInput, setMessageInput] = useState('');
+    const [isChatOpen, setIsChatOpen] = useState(false);
 
-    useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition((position) => {
-                setCurrentLocation({
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                });
-            }, (error) => {
-                console.error("Error getting current location", error);
-            });
-        }
-    }, []);
+    // ...
 
-    const toggleMap = useCallback(() => {
-        setIsMapOpen(!isMapOpen);
-    }, [isMapOpen]);
-
-    const mapContainerStyle = {
-        height: "400px",
-        width: "800px"
-    };
-
-    const center = {
-        lat: -34.397,
-        lng: 150.644
-    };
-
-    // Map Section
-    const MapSection = ({flightInfo}) => {
-        return (
-            <LoadScript googleMapsApiKey={googleMapsApiKey}>
-                <GoogleMap
-                    mapContainerStyle={mapContainerStyle}
-                    center={center}
-                    zoom={15}
-                >
-                    {currentLocation && (
-                        <DirectionsService
-                            options={{
-                                destination: flightInfo.boardingGateLocation,
-                                origin: currentLocation,
-                                travelMode: "WALKING"
-                            }}
-                            callback={(res) => {
-                                if (res !== null) {
-                                    setDirections(res);
-                                }
-                            }}
-                        />
-                    )}
-                    {directions && <DirectionsRenderer directions={directions} />}
-                </GoogleMap>
-            </LoadScript>
-        );
+    const handleToggleChat = () => setIsChatOpen(prev => !prev);
+    const handleSendMessage = () => {
+        // Sending message logic here
     };
 
     return (
         <div className="dashboard-container">
-            {/* ... existing elements ... */}
+            {/* Flight Info Section */}
+            <div className="flight-info-section">
+                <h1>Flight Information</h1>
+                <p>Flight Time: {flightInfo.flightTime}</p>
+                <p>Boarding Gate: {flightInfo.boardingGate}</p>
+                <p>Baggage Claim Gate: {flightInfo.baggageClaimGate}</p>
+            </div>
 
-            {/* Map Section */}
-            <button onClick={toggleMap}>Toggle Map</button>
-            {isMapOpen && <MapSection flightInfo={flightInfo} />}
-
-            {/* ... existing elements ... */}
+            {/* Chat Section */}
+            <div className={`chat-window ${isChatOpen ? 'open' : ''}`}>
+                {/* Close Chat Button */}
+                <button className="close-chat-btn" onClick={handleToggleChat}>
+                    <FaTimes />
+                </button>
+                {/* Chat content */}
+                <div className="chat-messages">
+                    {chatMessages.map((message, index) => (
+                        <div key={index} className="chat-message">{message}</div>
+                    ))}
+                </div>
+                <div className="chat-input-container">
+                    <input
+                        type="text"
+                        className="chat-input"
+                        value={messageInput}
+                        onChange={(e) => setMessageInput(e.target.value)}
+                        placeholder="Type your message..."
+                    />
+                    <button className="chat-send-button" onClick={handleSendMessage}>Send</button>
+                </div>
+            </div>
+            {/* Open Chat Button (Only shows when chat is not open) */}
+            {!isChatOpen && (
+                <button className="open-chat-btn" onClick={handleToggleChat}>
+                    Open Chat
+                </button>
+            )}
         </div>
     );
 }
-        useEffect(() => {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition((position) => {
-                    setCurrentLocation({
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    });
-                    setIsMapOpen(true); // Open the map section
-                }, (error) => {
-                    console.error("Error getting current location", error);
-                });
-            }
-        }, []);
-
-    // ... existing toggleChat function
-
-    const mapContainerStyle = {
-        height: "400px",
-        width: "800px"
-    };
-
-    const center = {
-        lat: -34.397,
-        lng: 150.644
-    };
-
-    // Map Section
-    const MapSection = ({flightInfo, currentLocation, directions, setDirections}) => {
-        const mapContainerStyle = {
-            height: "400px",
-            width: "800px"
-        };
-
-        const center = {
-            lat: -34.397,
-            lng: 150.644
-        };
-
-        return (
-            <LoadScript googleMapsApiKey={googleMapsApiKey}>
-                <GoogleMap
-                    mapContainerStyle={mapContainerStyle}
-                    center={center}
-                    zoom={15}
-                >
-                    {currentLocation && (
-                        <DirectionsService
-                            options={{
-                                destination: flightInfo.boardingGateLocation,
-                                origin: currentLocation,
-                                travelMode: "WALKING"
-                            }}
-                            callback={(res) => {
-                                if (res !== null) {
-                                    setDirections(res);
-                                }
-                            }}
-                        />
-                    )}
-                    {directions && <DirectionsRenderer directions={directions} />}
-                </GoogleMap>
-            </LoadScript>
-        );
-    };
-
-    // return (
-    //     <div className="dashboard-container">
-    //         {/* ... existing elements ... */}
-
-    //         {/* Map Section */}
-    //         {isMapOpen && <MapSection flightInfo={flightInfo} currentLocation={currentLocation} directions={directions} setDirections={setDirections} />}
-
-    //         {/* ... existing elements ... */}
-    //     </div>
-    // );
-

@@ -24,10 +24,10 @@ function App() {
     </div>
   );
 }
-function MyComponent()  {
-  const serverEndPoint = process.env.REACT_APP_SERVER_ENDPOINT;
+// function MyComponent()  {
+//   const serverEndPoint = process.env.REACT_APP_SERVER_ENDPOINT;
 
-  console.log('Server endpoint is:', serverEndPoint);
-}
+//   console.log('Server endpoint is:', serverEndPoint);
+// }
 
 export default App;
