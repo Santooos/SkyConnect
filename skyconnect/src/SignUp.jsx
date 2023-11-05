@@ -53,8 +53,8 @@ export default function SignUp() {
             </>
           )}
           <div className="linkedin-checkbox-container">
+            <label htmlFor="useLinkedIn" className="linkedin-label">Sign up with LinkedIn</label>
             <input type="checkbox" id="useLinkedIn" name="useLinkedIn" checked={useLinkedIn} onChange={handleUseLinkedInChange} />
-            <label htmlFor="useLinkedIn">Sign up with LinkedIn</label>
           </div>
           {useLinkedIn && (
             <div className="linkedin-section">
