@@ -1,6 +1,6 @@
 // Dashboard.jsx
 import React, { useState, useEffect } from 'react';
-import './Dashboard.css';
+import './Chatwindow.css';
 import socketIOClient from "socket.io-client";
 
 const ENDPOINT = "http://localhost:3000"; // Use your server's address

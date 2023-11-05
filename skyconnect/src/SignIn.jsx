@@ -11,7 +11,7 @@ function SignIn() {
     // ...
 
     // Redirect to Dashboard component after successful login
-    navigate('/chatwindow'); // Use navigate with the correct route
+    navigate('/Dashboard'); // Use navigate with the correct route
   };
 
   return (
