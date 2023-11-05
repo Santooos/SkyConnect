@@ -5,6 +5,7 @@ import { LandingPage } from './LandingPage';
 import Dashboard from './Dashboard';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
+import Chatwindow from './Chatwindow';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/login' element={<SignIn/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/chatwindow' element={<Chatwindow/>}/>
         </Routes>
       </BrowserRouter>
       
