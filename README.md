@@ -31,7 +31,7 @@ life’s journey, it's an exclusive service that adds value to the American airl
 * Buchizya Mwase (AAdvantage No: P8BU474)
 
 ### Link to Video Pitch 📹
-**...point us to where you tell us about your solution 😄**
+**[(https://bethunecookman-my.sharepoint.com/:p:/r/personal/bongiwesan_mkwananzi_students_cookman_edu/Documents/Presentation.pptx?d=wf78d0926180e4e2eba03b788fc0a4105&csf=1&web=1&e=GzO8hi&nav=eyJzSWQiOjI1OSwiY0lkIjoxNTgyMzY0NTYxfQ)]😄**
 
 ### Link to Demo Presentation 📽
 **...point us to your PPT or Canva slides 😍**
