@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chatwindow.css';
+import io from 'socket.io-client';
 import { FaTimes } from 'react-icons/fa';
+
+// Replace with your server's endpoint
+const ENDPOINT = process.env.REACT_APP_SERVER_ENDPOINT || "http://localhost:3000";
+const socket = io(ENDPOINT);
 
 export default function Dashboard() {
     const [flightInfo, setFlightInfo] = useState({
@@ -12,11 +17,30 @@ export default function Dashboard() {
     const [messageInput, setMessageInput] = useState('');
     const [isChatOpen, setIsChatOpen] = useState(false);
 
-    // ...
+    useEffect(() => {
+        // Listen for messages from the server
+        socket.on('message', (newMessage) => {
+            setChatMessages(prevMessages => [...prevMessages, newMessage]);
+        });
+
+        // Clean up on component unmount
+        return () => {
+            socket.off('message');
+        };
+    }, []);
 
     const handleToggleChat = () => setIsChatOpen(prev => !prev);
+
     const handleSendMessage = () => {
-        // Sending message logic here
+        if (messageInput.trim()) {
+            // Emit message to the server
+            socket.emit('sendMessage', messageInput);
+
+            // Optionally add the message to the chat immediately for a responsive UI
+            setChatMessages(prevMessages => [...prevMessages, messageInput]);
+
+            setMessageInput(''); // Clear input after sending
+        }
     };
 
     return (
