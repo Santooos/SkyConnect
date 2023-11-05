@@ -1,0 +1,50 @@
+/* Main container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Content container */
+.dashboard-content {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically on narrow screens */
+}
+
+/* Info section */
+.info-section {
+    display: flex;
+    flex-direction: column; /* Stacks info items vertically by default */
+    align-items: center; /* Centers items horizontally */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Individual info items */
+.dashboard-info {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Adds space between items when stacked */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .info-section {
+        flex-direction: row; /* Aligns info items horizontally on wider screens */
+        justify-content: space-between; /* Spaces items evenly */
+        margin-bottom: 0; /* Removes bottom margin from info items */
+    }
+    
+    .dashboard-info {
+        margin-bottom: 0; /* Removes bottom margin from info items */
+    }
+
+    /* Adjust this if you are adding a news section as well */
+    /* .dashboard-news-container {
+        /* Styles for the news section on wider screens */
+   
+}

@@ -1,16 +1,23 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom'; // Correct import for useNavigate
 import './SignIn.css';
 import logo from './logo.png';
-import { Link } from 'react-router-dom';
-
 
 function SignIn() {
-  // ... any additional logic or state
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  const handleLogin = () => {
+    // Handle login logic here
+    // ...
+
+    // Redirect to Dashboard component after successful login
+    navigate('/chatwindow'); // Use navigate with the correct route
+  };
 
   return (
     <div className="signin-container">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="signin-logo"/>
+        <img src={logo} alt="Logo" className="signin-logo" />
       </div>
       <div className="welcome-container">
         <div className="welcome-message">
@@ -35,13 +42,11 @@ function SignIn() {
             id="login-password"
             aria-label="Password"
           />
-          <button className="login-btn">
+          <button className="login-btn" onClick={handleLogin}>
             Login
           </button>
           <div className="new-user-prompt">
-            <p>New User?</p>
-            <Link to="/SignUp" className="signup-link">Sign Up</Link> {/* Link to the signup route */}
-            {/* Here you might want to put a link or a button to handle new user registration */}
+            <p>New User? <Link to="/signup" className="signup-link">Sign Up</Link></p> {/* Ensure the route is lowercase */}
           </div>
         </div>
       </div>
