@@ -25,29 +25,12 @@ life’s journey, it's an exclusive service that adds value to the American airl
 
 ### ✨ Contributors ✨
 
-* Santosh Lamichhane (AAdvantage No: V096NP2)
-* Tanyaradzwa Chisepo (AAdvantage No: Y71AB76)
-* Bongiwe S.N. Mkwananzi (AAdvantage No: B5YN372)
-* Buchizya Mwase (AAdvantage No: P8BU474)
+* Santosh Lamichhane 
+* Tanyaradzwa Chisepo During Hackathon Period
+* Bongiwe S.N. Mkwananzi During Hackathon Period
+* Buchizya Mwase During Hackathon Period
 
-### Link to Video Pitch 📹
-**[(https://bethunecookman-my.sharepoint.com/:p:/r/personal/bongiwesan_mkwananzi_students_cookman_edu/Documents/Presentation.pptx?d=wf78d0926180e4e2eba03b788fc0a4105&csf=1&web=1&e=GzO8hi&nav=eyJzSWQiOjI1OSwiY0lkIjoxNTgyMzY0NTYxfQ)]😄**
 
-### Link to Demo Presentation 📽
-**...point us to your PPT or Canva slides 😍**
-
-### Team Checklist due before 5p Saturday 11/4 ✅
-- [✅] Team photo
-- [✅] Team Slack channel
-- [✅] Communication established with mentor
-- [✅] Repo creation from this template
-- [✅] Hangar registration
-- [✅] Scavenger Hunt submission
-
-### Project Checklist due before 10a Sunday 11/5 🏁
-- [ ] Presentation complete and linked
-- [ ] Video pitch recorded and linked
-- [ ] Code merged to main branch
 
 ### Sample Checklist for Syntax Example 
 - [ ] Presentation complete and linked
